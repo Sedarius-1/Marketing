@@ -4,15 +4,14 @@ import DataSection from "@/components/DataSection.vue";
 </script>
 
 <template>
-  <DataSection :left="false" :title="'Jakość i zaufanie'" :text="'Dążymy do tego, aby każdy klient miał pewność, ' +
-   'że otrzymuje produkty i usługi najwyższej jakości. Nasza oferta jest starannie wyselekcjonowana, ' +
-    'a wszystkie produkty pochodzą od sprawdzonych dostawców. Dokładamy wszelkich starań, aby spełnić oczekiwania ' +
-     'naszych klientów, budując relacje oparte na zaufaniu, rzetelności i profesjonalizmie.'"></DataSection>
-  <DataSection :left="true" :title="'Wieloletnie doświadczenie'" :text="'Ogrodmex to lata doświadczeń, dzięki którym' +
-   ' zrozumieliśmy potrzeby i oczekiwania naszych klientów. Nasz zespół składa się z ekspertów ogrodnictwa, którzy z' +
-    ' przyjemnością doradzą w wyborze odpowiednich roślin, narzędzi oraz pomogą w realizacji ogrodniczych projektów.' +
-     ' Każdy dzień to dla nas szansa na pogłębianie wiedzy i doskonalenie umiejętności, aby jeszcze lepiej służyć' +
-      ' naszym klientom.'"></DataSection>
+  <DataSection :left="false" :title="'Projektowanie Ogrodów'" :text="'Tworzenie wyjątkowych przestrzeni zielonych to' +
+   ' nasza specjalność. Z pasją projektujemy ogrody, które harmonijnie łączą estetykę z funkcjonalnością. Uwzględniamy ' +
+    'wszystkie potrzeby i oczekiwania naszych klientów, tworząc spersonalizowane projekty, które oddają ich styl życia i ' +
+     'charakter.'" :image="'project.png'"></DataSection>
+  <DataSection :left="true" :title="'Zakładanie Ogrodów'" :text="'Realizacja projektu to kluczowy etap, który' +
+   ' wymaga precyzji i doświadczenia. Nasz zespół profesjonalistów zadba o każdy detal – od przygotowania podłoża, ' +
+    'przez nasadzenia, aż po instalację systemów nawadniających i oświetlenia. Twoje marzenia o idealnym ogrodzie są ' +
+     'w dobrych rękach.'" :image="'setup.png'"></DataSection>
 </template>
 
 <style scoped>

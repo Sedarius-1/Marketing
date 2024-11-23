@@ -1,5 +1,6 @@
 <script setup>
 import MenuBar from "@/components/MenuBar.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import MenuBar from "@/components/MenuBar.vue";
     <main>
       <router-view />
     </main>
+    <FooterComponent/>
   </div>
 
 </template>
@@ -24,26 +26,19 @@ header {
   line-height: 1.5;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
-@media (min-width: 1024px) {
-  header {
+
+@media (max-width: 560px) {
+ .app{
+   display: flex;
+   flex-direction: row !important;
+   padding: 0 !important;
+ }
+  main{
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -52,5 +47,11 @@ header {
   flex-direction: column;
   padding: 0 !important;
   margin: 0 !important;
+  background-image: url("src/assets/setup.png");
+  width:100vw;
+  height:100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
+
 </style>

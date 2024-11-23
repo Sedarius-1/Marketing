@@ -4,15 +4,16 @@ import DataSection from "@/components/DataSection.vue";
 </script>
 
 <template>
-  <DataSection :left="false" :title="'Jakość i zaufanie'" :text="'Dążymy do tego, aby każdy klient miał pewność, ' +
-   'że otrzymuje produkty i usługi najwyższej jakości. Nasza oferta jest starannie wyselekcjonowana, ' +
-    'a wszystkie produkty pochodzą od sprawdzonych dostawców. Dokładamy wszelkich starań, aby spełnić oczekiwania ' +
-     'naszych klientów, budując relacje oparte na zaufaniu, rzetelności i profesjonalizmie.'"></DataSection>
-  <DataSection :left="true" :title="'Wieloletnie doświadczenie'" :text="'Ogrodmex to lata doświadczeń, dzięki którym' +
-   ' zrozumieliśmy potrzeby i oczekiwania naszych klientów. Nasz zespół składa się z ekspertów ogrodnictwa, którzy z' +
-    ' przyjemnością doradzą w wyborze odpowiednich roślin, narzędzi oraz pomogą w realizacji ogrodniczych projektów.' +
-     ' Każdy dzień to dla nas szansa na pogłębianie wiedzy i doskonalenie umiejętności, aby jeszcze lepiej służyć' +
-      ' naszym klientom.'"></DataSection>
+  <DataSection :left="false" :title="'Szeroki Wybór Roślin'" :text="'W Ogrodmex wierzymy, że rośliny są duszą każdego ' +
+   'ogrodu. Dlatego nasza oferta obejmuje bogaty wybór gatunków, od ozdobnych po użytkowe, które pomogą Ci stworzyć' +
+    ' przestrzeń pełną życia i koloru. Niezależnie od tego, czy szukasz roślin do ogrodu, na balkon, czy do wnętrz, ' +
+     'zapewniamy różnorodność, która zadowoli każdego miłośnika zieleni. Oferujemy rośliny najwyższej jakości, uprawiane' +
+      ' z dbałością o każdy szczegół, aby zagwarantować ich zdrowie i piękno.'"></DataSection>
+  <DataSection :left="true" :title="'Porady i Inspiracje'" :text="'Rozumiemy, że wybór odpowiednich roślin bywa trudny, ' +
+   'dlatego zawsze możesz liczyć na pomoc naszych ekspertów. Chętnie doradzimy, jakie rośliny najlepiej sprawdzą się w ' +
+    'Twoim ogrodzie, biorąc pod uwagę warunki środowiskowe, styl i Twoje oczekiwania. Zainspirujemy Cię pomysłami na' +
+     ' ciekawe kompozycje oraz podpowiemy, jak dbać o wybrane gatunki, aby cieszyły oczy przez wiele lat.' +
+      ' naszym klientom.'" :first-image="'logo.png'"></DataSection>
 </template>
 
 <style scoped>
