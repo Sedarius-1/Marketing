@@ -21,6 +21,7 @@ p{
 @media (max-width: 560px) {
   p{
     width:100vw;
+    font-size: 1vw;
   }
 
 }

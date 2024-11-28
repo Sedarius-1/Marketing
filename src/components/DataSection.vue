@@ -21,8 +21,8 @@ function getImageUrl(fileName) {
 <template>
   <div class="data-section-wrapper" v-if="left">
     <img :src="getImageUrl(image)" alt="logo" v-if="!contact"/>
+    <iframe v-if="contact" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1308.873159052665!2d19.895077671294473!3d51.73626374184114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1732794620643!5m2!1spl!2spl"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <div class="data-section-content">
-
       <h1>{{ title }}</h1>
       <pre v-if="props.contact">{{ text }}</pre>
       <p v-else>{{ text }}</p>
@@ -49,6 +49,10 @@ function getImageUrl(fileName) {
   }
 }
 
+iframe {
+  transform:skew(-14deg);
+  margin-left: 2vw;
+}
 .data-section-wrapper {
   transform: skew(14deg);
   display: flex;
@@ -129,6 +133,10 @@ function getImageUrl(fileName) {
 
   .data-section-wrapper-right img {
     transform:none !important;
+  }
+
+  iframe {
+    display: none;
   }
 }
 
